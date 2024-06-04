@@ -1,0 +1,21 @@
+:root {
+    --dark-theme: #33393f;
+    --blue-theme: #1ea9e5;
+    --background: rgb(212, 225, 229);
+}
+* {
+  color: var(--dark-theme);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    border-style:dashed ;
+    
+    
+    border-color: red;
+    /* background-color: var(--background); */
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+
+ 

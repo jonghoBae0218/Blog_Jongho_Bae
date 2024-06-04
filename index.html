@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Blog main</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- reset and set styles -->
+    <link rel="resetsheet" type="text/css" href="./Assets/css/reset.css" />
+    <!-- Set universal style -->
+    <link rel="stylesheet" type="text/css" href="./Assets/css/styles.css" />
+    <!-- Set specific style for form sheet -->
+    <link rel="stylesheet" type="text/css" href="./Assets/css/form.css" />
+
+  </head>
+
+
+  <body>
+    <!-- Header that has applicant name and navigation -->
+    <header>
+        <input type="checkbox">
+        <span class="slider"></span>
+    </header>
+
+    <main>
+        <section class = blog-name>
+            <div class="grad-box">My First Blog</div>
+        </section>
+        <section class = input-box>
+            <div>
+                <h2> What's on your mind?</h2>
+                <h3>Username<h3>
+                <input class=text-box type="text" id="username-input" placeholder="User name">
+                <h3>Title<h3>
+                <input class=text-box type="text" id="title-input" placeholder="Title">
+                <h3>Content<h3>
+                <textarea class=text-box id="content-input" rows ='4' placeholder="Content"></textarea>
+                <br>
+                <button id="submit">Submit</button>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src = "Assets/js/logic.js"></script>
+    <script src = "Assets/js/form.js"></script>
+    </body>
+</html>
