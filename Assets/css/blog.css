@@ -2,18 +2,19 @@
 header{
     display: flex;
     justify-content: space-between;
-    border-bottom: 7px;
-    border-style: double;
+    border-bottom: 7px double black;
+    /* border-style: double; */
+    padding: 8px;
 }
 
 
 
 footer{
-    position:fixed;
+    /* position:fixed; */
     bottom: 0;
     right: 0;
     left: 0;
-    align-items: baseline;
+    /* align-items: baseline; */
     border-top: 7px;
     border-style: double;
 }
@@ -22,9 +23,51 @@ footer h2{
     text-align: center;
 }
 
+header > div{
+    display: flex;
+}
+
+/* Light mode */
 .box{
-    height: 200px;
-    width: 200px;
+    border: 1px solid black;
+  
+    margin: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border-radius:; */
+    /* height: 200px; */
+    /* width: 200px; */
     /* background-color: blue; */
     
+}
+.box > h2{
+    border-bottom: 1px solid black;
+    margin: 2px;
+}
+
+.box > p{
+    /* border-bottom: 1px solid black; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.box > h3{
+    color:gray;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 2px;
+}
+
+#back-button{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    margin: 3px;
+}
+
+#darkmode-button{
+    background-color: white;
+    color: black;
+    padding: 3px;
+    margin: 3px;
 }

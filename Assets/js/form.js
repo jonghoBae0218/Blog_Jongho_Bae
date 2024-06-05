@@ -9,12 +9,17 @@ const content = document.querySelector('#content-input');
 submitBtn.addEventListener("click", function(event){
     event.preventDefault();
     // console.log(userName.value);
+    if(userName.value==='' || titleInput.value === '' ||  content.value.trim()===''){
+        alert("Please fill in all the boxes");
+        return;
+    }
     const submission= {
         userName : userName.value,
         title : titleInput.value,
         content: content.value.trim(),
 
     };
+    
 
     // Retrieve existing array from localStorage or create a new one if it doesn't exist
     const submissions = JSON.parse(localStorage.getItem('submissions')) || [];
@@ -33,3 +38,7 @@ submitBtn.addEventListener("click", function(event){
     window.open('blog.html', "_self");
 
 })
+
+
+
+

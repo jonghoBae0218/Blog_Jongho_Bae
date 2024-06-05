@@ -5,11 +5,12 @@ main{
     display: flex;
     
 }
-
+/* Light theme */
 header{
     height: 7vh;
     border-bottom: 10px;
     border-style: double;
+    padding: 8px;
 }
 
 .blog-name{
@@ -53,21 +54,27 @@ header{
 .input-box>div{
     width:90%;
 }
-
-.text-box{
-    width: 100%;
-    height: 24px;
-  }
-
-#content-input{
-    height: 80px;
-}
-
-  #submit{
+#submit{
     color: white;
     background-color: black;
     justify-content:center;
     width: 100%;
 
-  }
+}
+.text-box{
+    width: 100%;
+    height: 24px;
+}
 
+
+/* General */
+
+#content-input{
+    height: 80px;
+}
+
+  
+
+header > h1{
+    float: right;
+}

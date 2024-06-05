@@ -10,7 +10,9 @@ for(let i=0; i<iter ; i++ ){
     console.log(currentSub);
     const box = document.createElement("div");
     box.classList.add('box');
+    box.classList.add('boxSelect');
     
+
     const title = document.createElement('h2');
     title.textContent = currentSub.title;
     box.appendChild(title);
@@ -20,7 +22,7 @@ for(let i=0; i<iter ; i++ ){
     box.appendChild(content);
 
     const author = document.createElement('h3');
-    author.textContent = 'Posted by:'+ currentSub.userName;
+    author.textContent = 'Posted by: '+ currentSub.userName;
     box.appendChild(author);
 
     submissionBody.appendChild(box);
@@ -31,6 +33,6 @@ for(let i=0; i<iter ; i++ ){
 backButton.addEventListener('click', function(event){
     event.preventDefault;
     console.log("Hi")
-    // window.open('blog.html', "_self");
     window.open('index.html',"_self");
 });
+
