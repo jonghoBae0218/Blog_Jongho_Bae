@@ -1,71 +1,20 @@
-
+/* ================================= */
 /* light mode */
+/* ================================= */
+
 .light header{
+    /* Flex property to space blog name and feature icons */
     display: flex;
     justify-content: space-between;
     border-bottom: 7px double black;
-    /* border-style: double; */
     padding: 8px;
 }
 
-
-.light footer{
-    /* position:fixed; */
-    bottom: 0;
-    right: 0;
-    left: 0;
-    /* align-items: baseline; */
-    border-top: 7px;
-    border-style: double;
-}
-
-.light footer h2{
-    text-align: center;
-}
-
+/* put back button and darkmode button next to eachother */
 .light header > div{
     display: flex;
 }
 
-.light #submission-body{
-    min-height: 82vh;
-    
-}
-
-.light .box{
-    border: 1px solid black;
-  
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    /* border-radius:; */
-    /* height: 200px; */
-    /* width: 200px; */
-    /* background-color: blue; */
-    
-}
-.light .box > h2{
-    border-bottom: 1px solid black;
-    margin: 2px;
-}
-
-.light a{
-    text-decoration: none;
-
-}
-
-.light .box > p{
-    /* border-bottom: 1px solid black; */
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.light .box > h3{
-    color:gray;
-    font-size: 16px;
-    font-weight: lighter;
-    margin: 2px;
-}
 
 .light #back-button{
     background-color: black;
@@ -81,17 +30,86 @@
     margin: 3px;
 }
 
+/* Make sure submisison body fills 82vh so that footer always stays on bottom */
+.light #submission-body{
+    min-height: 82vh;
+    
+}
+.light footer{
+    /* Three lines below to  make box fill left and right*/
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: 7px;
+    border-style: double;
+    padding-left: 8px;
+
+}
+
+.light footer h2{
+    text-align: center;
+}
+
+/* Box setting for added info from previous page */
+.light .box{
+    border: 1px solid black;
+    margin: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    
+}
+.light .box > h2{
+    border-bottom: 1px solid black;
+    margin: 2px;
+}
+
+.light a{
+    text-decoration: none;
+
+}
+
+.light .box > p{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.light .box > h3{
+    color:gray;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 2px;
+}
+
+
+
 /* Dark mode */
+/* Change color properties from .light to make it dark mode */
+
 .dark header{
     display: flex;
     justify-content: space-between;
     background-color: black;
     border-bottom: 7px double white;
-    /* border-style: double; */
     padding: 8px;
 }
+
 .dark header h1{
     color: white;
+}
+
+.dark #back-button{
+    background-color: white;
+    color: black;
+    padding: 3px;
+    margin: 3px;
+}
+
+.dark #darkmode-button{
+    background-color: white;
+    color: black;
+    padding: 3px;
+    margin: 3px;
 }
 
 .dark main{
@@ -103,12 +121,44 @@
     background-color: black;
     min-height: 82vh;
 }
+
+.dark .box{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+  
+    margin: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dark .box > h2{
+    border-bottom: 1px solid white;
+    margin: 2px;
+    
+    background-color: black;
+    color: white;
+}
+
+.dark .box > p{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: black;
+    color: white;
+}
+
+.dark .box > h3{
+    color:gray;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 2px;
+}
+
 .dark footer{
-    /* position:fixed; */
+    padding-left: 8px;
     bottom: 0;
     right: 0;
     left: 0;
-    /* align-items: baseline; */
     border-top: 7px;
     border-style: double;
     background-color: black;
@@ -139,53 +189,3 @@
     
 }
 
-.dark .box{
-    border: 1px solid white;
-    background-color: black;
-    color: white;
-  
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    /* border-radius:; */
-    /* height: 200px; */
-    /* width: 200px; */
-    /* background-color: blue; */
-    
-}
-.dark .box > h2{
-    border-bottom: 1px solid white;
-    margin: 2px;
-    
-    background-color: black;
-    color: white;
-}
-
-.dark .box > p{
-    /* border-bottom: 1px solid black; */
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background-color: black;
-    color: white;
-}
-
-.dark .box > h3{
-    color:gray;
-    font-size: 16px;
-    font-weight: lighter;
-    margin: 2px;
-}
-
-.dark #back-button{
-    background-color: white;
-    color: black;
-    padding: 3px;
-    margin: 3px;
-}
-
-.dark #darkmode-button{
-    background-color: white;
-    color: black;
-    padding: 3px;
-    margin: 3px;
-}

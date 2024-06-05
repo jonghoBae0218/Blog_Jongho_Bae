@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+  
   <head>
-    <title>Blog main</title>
+    <title>Posts</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -10,45 +11,48 @@
     <link rel="resetsheet" type="text/css" href="./Assets/css/reset.css" />
     <!-- Set universal style -->
     <link rel="stylesheet" type="text/css" href="./Assets/css/styles.css" />
-    <!-- Set specific style for form sheet -->
+    <!-- Set specific style for blog sheet -->
     <link rel="stylesheet" type="text/css" href="./Assets/css/blog.css" />
 
   </head>
 
 
   <body>
+    <!-- div for changing light and dark mode -->
     <div class="container light">
-             <!-- Header that has applicant name and navigation -->
-        
+             
+      <main>
+        <header>
+          <h1>My First Blog</h1>
+          
+          <div>
+              <button id="back-button">Back</button>
+              <h1 id="darkmodeIcon"></h1>
+          </div>
 
-        <main>
-          <header>
-            <h1>My first blog</h1>
-            
-            <div>
-                <button id="back-button">Back</button>
-                <h1 id="darkmodeIcon"></h1>
-            
-            </div>
         </header>
-            <section id="submission-body">
-                
 
-            </section>
+        <!-- This section is used to read datas from local storage and attach here -->
+        <section id="submission-body">
+        </section>
 
-            <footer>
-                <h2>Made with ❤️ by Jongho</h2>
-                <p> <strong>Portfolio: </strong><a href = "https://jonghobae0218.github.io/Portfolio_Jongho_Bae/">Jongho Bae</a></p> 
-                <p><strong>Blog: </strong>Full stack blog</p>
-                <p><strong>Email: </strong>jb4918@columbia.edu</p>
-            </footer>
-        </main>
+        <!-- Footer on the bottom -->
+        <footer>
+          <h2>Made with ❤️ by Jongho</h2>
+          <p> <strong>Portfolio: </strong><a href = "https://jonghobae0218.github.io/Portfolio_Jongho_Bae/">Jongho Bae</a></p> 
+          <p><strong>Blog: </strong>Full stack blog</p>
+          <p><strong>Email: </strong>jb4918@columbia.edu</p>
+        </footer>
+      </main>      
+
+        
 
     </div>
    
    
-
+    <!-- link logic,js for rules for both pages -->
     <script src = "Assets/js/logic.js"></script>
+    <!--  link blog.js for rules for this page-->
     <script src = "Assets/js/blog.js"></script>
 
   </body>

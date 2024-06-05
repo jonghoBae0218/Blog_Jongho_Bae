@@ -1,11 +1,28 @@
 
+/* ================================= */
+/* General styling */
+/* ================================= */
 
-
+/* Set main to be flex to put blog-name and input-box side by side  */
 main{
-    display: flex;
-    
+    display: flex;   
 }
-/* Light theme */
+
+/* Move darkmode icon to right */
+header > h1{
+    float: right;
+}
+
+/* Set content inputbox to be bigger */
+#content-input{
+    height: 80px;
+}
+
+
+
+/* ================================= */
+/* light mode */
+/* ================================= */
 
 
 .light header{
@@ -16,14 +33,18 @@ main{
 }
 
 .light .blog-name{
+    /* Blog name to be 50 in width */
     width: 50%;
     border-right:10px ;
     border-style: double;
+    /* Make sure to fill the page so that right border is there until bottom of the page */
     height: 93vh;
+    /* flex property to center name */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* Box style around blog name */
 .light .grad-box{
     display: flex;
     justify-content: center;
@@ -36,10 +57,11 @@ main{
     color: white;
 }
 
-
+/* box that will receive every input */
 .light .input-box{
     width: 50%;
     height: 93vh;
+    /* flex property to center the form */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,6 +75,7 @@ main{
     padding:4px;
 }
 
+/* Make the subbox fill 90 percent of input-box class */
 .light .input-box>div{
     width:90%;
 }
@@ -68,7 +91,11 @@ main{
     width: 100%;
     height: 24px;
 }
-/* Dark theme */
+
+/* ================================= */
+/* light mode */
+/* ================================= */
+/* Changed color settings from .light */
 
 .dark header{
     height: 7vh;
@@ -140,16 +167,3 @@ main{
     height: 24px;
 }
 
-
-
-/* General */
-
-#content-input{
-    height: 80px;
-}
-
-  
-
-header > h1{
-    float: right;
-}
