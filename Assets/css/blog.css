@@ -1,5 +1,6 @@
 
-header{
+/* light mode */
+.light header{
     display: flex;
     justify-content: space-between;
     border-bottom: 7px double black;
@@ -8,8 +9,7 @@ header{
 }
 
 
-
-footer{
+.light footer{
     /* position:fixed; */
     bottom: 0;
     right: 0;
@@ -19,16 +19,20 @@ footer{
     border-style: double;
 }
 
-footer h2{
+.light footer h2{
     text-align: center;
 }
 
-header > div{
+.light header > div{
     display: flex;
 }
 
-/* Light mode */
-.box{
+.light #submission-body{
+    min-height: 82vh;
+    
+}
+
+.light .box{
     border: 1px solid black;
   
     margin: 6px;
@@ -40,32 +44,146 @@ header > div{
     /* background-color: blue; */
     
 }
-.box > h2{
+.light .box > h2{
     border-bottom: 1px solid black;
     margin: 2px;
 }
 
-.box > p{
+.light a{
+    text-decoration: none;
+
+}
+
+.light .box > p{
     /* border-bottom: 1px solid black; */
     padding-top: 8px;
     padding-bottom: 8px;
 }
 
-.box > h3{
+.light .box > h3{
     color:gray;
     font-size: 16px;
     font-weight: lighter;
     margin: 2px;
 }
 
-#back-button{
+.light #back-button{
     background-color: black;
     color: white;
     padding: 3px;
     margin: 3px;
 }
 
-#darkmode-button{
+.light #darkmode-button{
+    background-color: white;
+    color: black;
+    padding: 3px;
+    margin: 3px;
+}
+
+/* Dark mode */
+.dark header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-bottom: 7px double white;
+    /* border-style: double; */
+    padding: 8px;
+}
+.dark header h1{
+    color: white;
+}
+
+.dark main{
+    background-color: black;
+
+}
+
+.dark #submission-body{
+    background-color: black;
+    min-height: 82vh;
+}
+.dark footer{
+    /* position:fixed; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* align-items: baseline; */
+    border-top: 7px;
+    border-style: double;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.dark footer h2{
+    text-align: center;
+    color: white;;
+}
+
+.dark footer p{
+    color: white;
+}
+
+.dark footer strong{
+    color: white;
+}
+
+.dark a{
+    text-decoration: none;
+    color: white;
+}
+
+.dark header > div{
+    display: flex;
+    
+}
+
+.dark .box{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+  
+    margin: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border-radius:; */
+    /* height: 200px; */
+    /* width: 200px; */
+    /* background-color: blue; */
+    
+}
+.dark .box > h2{
+    border-bottom: 1px solid white;
+    margin: 2px;
+    
+    background-color: black;
+    color: white;
+}
+
+.dark .box > p{
+    /* border-bottom: 1px solid black; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: black;
+    color: white;
+}
+
+.dark .box > h3{
+    color:gray;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 2px;
+}
+
+.dark #back-button{
+    background-color: white;
+    color: black;
+    padding: 3px;
+    margin: 3px;
+}
+
+.dark #darkmode-button{
     background-color: white;
     color: black;
     padding: 3px;

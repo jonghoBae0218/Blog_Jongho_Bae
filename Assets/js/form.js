@@ -4,7 +4,7 @@ const titleInput = document.querySelector('#title-input');
 const content = document.querySelector('#content-input');
 
 
-
+console.log("Code initiated");
 
 submitBtn.addEventListener("click", function(event){
     event.preventDefault();
